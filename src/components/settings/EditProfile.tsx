@@ -75,7 +75,7 @@ const EditProfile: React.FC = () => {
   };
 
   useEffect(() => {
-    fetch("/userData.json")
+    fetch("/soar/userData.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch form data");

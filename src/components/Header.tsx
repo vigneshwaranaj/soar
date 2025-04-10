@@ -30,7 +30,7 @@ const Header: React.FC = () => {
     const currentPath = location.pathname;
     const currentTitle = pageTitles[currentPath] || 'Page';
     setTitle(currentTitle);
-    fetch("/userData.json")
+    fetch("/soar/userData.json")
         .then((response) => {
           if (!response.ok) {
             throw new Error("Failed to fetch form data");
