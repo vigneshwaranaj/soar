@@ -97,44 +97,47 @@ const QuickTransfer: React.FC = () => {
   };
 
   const users = [
-    { name: "Livia Bator", role: "CEO", img: "/path/to/livia.jpg" },
-    { name: "Randy Press", role: "Director", img: "/path/to/randy.jpg" },
-    { name: "Workman", role: "Designer", img: "/path/to/workman.jpg" },
+    { name: "Livia Bator", role: "CEO", img: "/profile-image.svg" },
+    { name: "Randy Press", role: "Director", img: "/profile-image.svg" },
+    { name: "Workman", role: "Designer", img: "/profile-image.svg" },
     // Add more users if you want
   ];
 
   return (
-    <div className="p-6 bg-white rounded-3xl border-2 border-blue-200">
+    <div className="p-6">
     <div className="flex items-center overflow-x-auto gap-6 pb-4 scrollbar-hide">
       {users.map((user, idx) => (
-        <div key={idx} className="flex flex-col items-center min-w-[80px]">
+        <div key={idx} className="flex flex-col items-center min-w-[100px]">
           <img
             src={user.img}
             alt={user.name}
             loading="lazy"
-            className="w-16 h-16 rounded-full object-cover"
+            className="w-[70px] h-[70px] rounded-full object-cover"
           />
-          <p className="mt-2 font-bold text-sm">{user.name}</p>
-          <p className="text-xs text-blue-400">{user.role}</p>
+          <p className="mt-2 text-[15px] text-[#232323]">{user.name}</p>
+          <p className="text-xs text-blue-400 text-[15px] text-[#718EBF]">{user.role}</p>
         </div>
       ))}
-      <button className="flex items-center justify-center w-10 h-10 bg-white border rounded-full shadow-md shrink-0">
+      {/* <button className="flex items-center justify-center w-10 h-10 bg-white border rounded-full shadow-md shrink-0">
         <span className="text-2xl">{'>'}</span>
-      </button>
+      </button> */}
     </div>
 
-    <div className="mt-6 flex items-center bg-gray-100 rounded-full overflow-hidden">
+    <div className="mt-6 flex items-center justify-between">
+      <div>Write Amount</div>
+      <div className='bg-gray-100 rounded-full overflow-hidden flex items-center'>
       <input
         type="text"
         placeholder="Write Amount"
-        className="flex-1 px-6 py-3 bg-transparent outline-none placeholder-gray-400 text-center"
+        className="flex-1 px-6 py-3 bg-transparent outline-none text-[#718EBF]text-center"
         value="525.50"
-        readOnly
       />
       <button className="flex items-center gap-2 px-6 py-3 bg-black text-white rounded-full">
         Send 
         {/* <FaPaperPlane /> */}
       </button>
+      </div>
+     
     </div>
   </div>
   );

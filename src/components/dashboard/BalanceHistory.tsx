@@ -61,7 +61,7 @@ const BalanceHistory: React.FC = () => {
   };
 
   return (
-    <div className="bg-white p-4 rounded-2xl shadow w-full h-[300px]">
+    <div className="p-4 h-[250px]">
       <Line ref={chartRef} data={data} options={options} />
     </div>
   );

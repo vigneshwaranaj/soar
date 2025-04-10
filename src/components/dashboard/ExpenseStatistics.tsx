@@ -38,7 +38,7 @@ const ExpenseStatistics = () => {
     maintainAspectRatio: false,
     plugins: {
       legend: {
-        position: 'bottom',
+        display: false
       },
       datalabels: {
         color: '#fff',
@@ -56,7 +56,7 @@ const ExpenseStatistics = () => {
   };
 
   return (
-    <div className="h-[300px]">
+    <div className="h-[250px]">
       <Pie data={data} options={options} />
     </div>
   );

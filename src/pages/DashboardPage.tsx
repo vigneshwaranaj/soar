@@ -101,17 +101,14 @@ const DashboardPage: React.FC = () => {
 
         {/* Expense Statistics */}
         <div className="bg-white p-6 rounded-2xl shadow col-span-4">
-          <h2 className="font-semibold mb-4">Expense Statistics</h2>
           <ExpenseStatistics></ExpenseStatistics>
         </div>
 
         {/* Quick Transfer */}
         <div className="bg-white p-6 rounded-2xl shadow col-span-5">
-          <h2 className="font-semibold mb-4">Quick Transfer</h2>
           <QuickTransfer></QuickTransfer>
         </div>
-        <div className="bg-white p-6 rounded-2xl shadow mt-6 col-span-7">
-        <h2 className="font-semibold mb-4">Balance History</h2>
+        <div className="bg-white p-6 rounded-2xl shadow col-span-7">
         <BalanceHistory></BalanceHistory>
       </div>
       </div>
