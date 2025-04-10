@@ -97,9 +97,9 @@ const QuickTransfer: React.FC = () => {
   };
 
   const users = [
-    { name: "Livia Bator", role: "CEO", img: "/profile-image.svg" },
-    { name: "Randy Press", role: "Director", img: "/profile-image.svg" },
-    { name: "Workman", role: "Designer", img: "/profile-image.svg" },
+    { name: "Livia Bator", role: "CEO", img: "/soar/profile-image.svg" },
+    { name: "Randy Press", role: "Director", img: "/soar/profile-image.svg" },
+    { name: "Workman", role: "Designer", img: "/soar/profile-image.svg" },
     // Add more users if you want
   ];
 
